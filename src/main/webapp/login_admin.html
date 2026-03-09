@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion Admin - NoCortisol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #74c0fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            background-color: #f0f8ff;
+            /* Light blue tint for admin logo background */
+            padding: 10px;
+        }
+
+        h2 {
+            color: #0077b6;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input-box i {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            color: #0077b6;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 12px 12px 38px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0077b6;
+            box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+        }
+
+        input:invalid {
+            box-shadow: none;
+            outline: none;
+        }
+
+        button,
+        button:focus,
+        button:active {
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #005f8b;
+            transform: translateY(-2px);
+        }
+
+        .admin-img {
+            width: 100px;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Using a generic admin/user-shield icon as the logo -->
+        <img src="https://cdn-icons-png.flaticon.com/512/6073/6073873.png" class="logo" alt="Logo Admin">
+
+        <h2>Connexion Admin</h2>
+
+        <form action="login" method="POST">
+            <div class="input-box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" placeholder="Mot de passe" required>
+            </div>
+            <input type="hidden" name="role" value="admin">
+            <button type="submit"><i class="fa fa-sign-in-alt"></i>Se connecter</button>
+        </form>
+
+        <!-- Graphic representing gears/management -->
+        <img src="https://cdn-icons-png.flaticon.com/512/2881/2881142.png" class="admin-img" alt="Administration">
+    </div>
+</body>
+
+</html>
