@@ -3,14 +3,14 @@ package org.example.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "patients")
-public class Patient {
+@Table(name = "administrateurs")
+public class Administrateur {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String nom;
 
     @Column(nullable = false, unique = true)
     private String email;
@@ -18,13 +18,12 @@ public class Patient {
     @Column(nullable = false)
     private String motDePasse;
 
-    public Patient() {
-    }
+    public Administrateur() {}
 
-    public Patient(String name, String email, String password) {
-        this.name = name;
+    public Administrateur(String nom, String email, String motDePasse) {
+        this.nom = nom;
         this.email = email;
-        this.motDePasse = password;
+        this.motDePasse = motDePasse;
     }
 
     public Long getId() {
@@ -35,12 +34,12 @@ public class Patient {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNom() {
+        return nom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getEmail() {
@@ -51,11 +50,11 @@ public class Patient {
         this.email = email;
     }
 
-    public String getPassword() {
+    public String getMotDePasse() {
         return motDePasse;
     }
 
-    public void setPassword(String password) {
-        this.motDePasse = password;
+    public void setMotDePasse(String motDePasse) {
+        this.motDePasse = motDePasse;
     }
 }

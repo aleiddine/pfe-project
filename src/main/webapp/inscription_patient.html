@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="card">
+    <div class="image">
+        <img src="medecin.jpeg">
+    </div>
+    <div class="form">
+        <h2>Créer un compte patient</h2>
+        <form id="inscriptionForm" novalidate>
+            <label>Nom</label>
+            <input type="text" placeholder="Entrer votre nom" class="input" id="nom" required>
+            <div class="error" id="nomError"></div>
+            <label>Prénom</label>
+            <input type="text" placeholder="Entrer votre prénom" class="input" id="prenom" required>
+            <div class="error" id="prenomError"></div>
+            <label>Email</label>
+            <input type="email" placeholder="Entrer votre email" class="input" id="email" required>
+            <div class="error" id="emailError"></div>
+            <label>Téléphone</label>
+            <input type="tel" placeholder="Entrer votre Téléphone" class="input" id="tel">
+            <div class="error" id="telError"></div>
+            <label>Date de naissance</label>
+            <input type="date" class="input">
+            <label>Mot de passe</label>
+            <input type="password" placeholder="Entrer votre mot de passe" class="input" id="password" required>
+            <div class="error" id="passwordError"></div>
+            <div id="strength"></div>
+            <label>Confirmer mot de passe</label>
+            <input type="password" placeholder="Confirmer votre mot de passe" class="input" id="confirmpassword"
+                   required>
+            <div class="error" id="confirmError"></div>
+            <input type="submit" value="S'inscrire" id="button" class="input">
+        </form>
+        <div class="login">
+            <p>Vous avez déja un compte ? <a href="connexion_patient.html">Connexion</a></p>
+        </div>
+        <div id="successMessage" style="text-align: center; font-weight: bold; margin-top: 10px;"></div>
+    </div>
+</div>
+<script src="inscription.js"></script>
+</body>
+
+</html>

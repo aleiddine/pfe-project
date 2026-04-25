@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Médecin - NoCortisol</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Espace Médecin</h1>
+        <img src="dr.jpg" alt="Docteur" class="doctor-profile-img">
+        <p class="subtitle">Inscription Nouveau Praticien</p>
+
+        <form action="inscription" method="POST">
+
+            <div class="form-row">
+
+                <div class="input-group" style="width: 100%;">
+                    <label>Nom complet</label>
+                    <input type="text" name="name" placeholder="Nom et prénom du médecin" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="exemple@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Téléphone</label>
+                    <input type="tel" name="phone" placeholder="+216 xx xxx xxx">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Sexe</label>
+                    <select id="sexeInput">
+                        <option value="">Choisir</option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="speciality">Spécialité</label>
+                    <select name="specialty" required>
+                        <option value="">Choisir une spécialité </option>
+                        <option value="Cardiologie">Cardiologie</option>
+                        <option value="Pédiatrie">Pédiatrie</option>
+                        <option value="Dermatologie">Dermatologie</option>
+                        <option value="Neurologie">Neurologie</option>
+                        <option value="Chirurgie">Chirurgie</option>
+                        <option value="Oncologie">Oncologie</option>
+                        <option value="Ophtalmologie">Ophtalmologie</option>
+                        <option value="Orthopédie">Orthopédie</option>
+                        <option value="Psychiatrie">Psychiatrie</option>
+                        <option value="Gynécologie">Gynécologie</option>
+                        <option value="Urologie">Urologie</option>
+                        <option value="Radiologie">Radiologie</option>
+                        <option value="Anesthésie">Anesthésie</option>
+                        <option value="Médecine Générale">Médecine Générale</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- NEW: Location Field -->
+            <div class="form-row">
+                <div class="input-group" style="width: 100%;">
+                    <label>Localisation (ex: tunis-ariana)</label>
+                    <input type="text" name="location" placeholder="Ex: tunis-ariana, manoube-jdaida, tunis-hay ennaser..." required>
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Mot de passe</label>
+                    <input type="password" name="password" placeholder="Mot de passe" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirmer mot de passe</label>
+                    <input type="password" name="confirm" placeholder="Confirmer" required>
+                </div>
+
+            </div>
+
+            <input type="hidden" name="role" value="doctor">
+
+            <button type="submit" class="btn">
+                S'inscrire
+            </button>
+
+            <div id="messageBox" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+
+            <div style="margin-top: 15px; text-align: center;">
+                <a href="connexion_medecin.html" style="color: #0077b6; text-decoration: none; font-size: 14px;">Déjà un compte ? Se connecter</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

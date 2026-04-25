@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Connexion Admin - NoCortisol</title>
+    <title>Connexion Patient - NoCortisol</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #74c0fc;
+            background: #f1f5f9;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,9 +40,6 @@
             width: 80px;
             margin-bottom: 15px;
             border-radius: 50%;
-            background-color: #f0f8ff;
-            /* Light blue tint for admin logo background */
-            padding: 10px;
         }
 
         h2 {
@@ -78,17 +75,6 @@
             box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
         }
 
-        input:invalid {
-            box-shadow: none;
-            outline: none;
-        }
-
-        button,
-        button:focus,
-        button:active {
-            outline: none;
-        }
-
         button {
             width: 100%;
             padding: 12px;
@@ -99,6 +85,7 @@
             font-size: 16px;
             cursor: pointer;
             transition: background 0.3s, transform 0.2s;
+            outline: none;
         }
 
         button:hover {
@@ -106,7 +93,16 @@
             transform: translateY(-2px);
         }
 
-        .admin-img {
+        .btn-register {
+            background: #28a745;
+            margin-top: 10px;
+        }
+
+        .btn-register:hover {
+            background: #218838;
+        }
+
+        .medical-img {
             width: 100px;
             margin-top: 20px;
             opacity: 0.9;
@@ -115,29 +111,37 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
+    <img src="patient.jpeg" class="logo" alt="Logo Patient">
 
-        <!-- Using a generic admin/user-shield icon as the logo -->
-        <img src="https://cdn-icons-png.flaticon.com/512/6073/6073873.png" class="logo" alt="Logo Admin">
+    <h2>Connexion Patient</h2>
 
-        <h2>Connexion Admin</h2>
+    <form action="connexion" method="POST">
+        <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+        </div>
+        <input type="hidden" name="role" value="patient">
+        <button type="submit"><i class="fa fa-sign-in-alt"></i> Se connecter</button>
+    </form>
 
-        <form action="login" method="POST">
-            <div class="input-box">
-                <i class="fa fa-envelope"></i>
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="input-box">
-                <i class="fa fa-lock"></i>
-                <input type="password" name="password" placeholder="Mot de passe" required>
-            </div>
-            <input type="hidden" name="role" value="admin">
-            <button type="submit"><i class="fa fa-sign-in-alt"></i>Se connecter</button>
-        </form>
-
-        <!-- Graphic representing gears/management -->
-        <img src="https://cdn-icons-png.flaticon.com/512/2881/2881142.png" class="admin-img" alt="Administration">
+    <div style="margin-top: 15px;">
+        <p style="margin-bottom: 5px; color: #555; font-size: 14px;">Vous n'avez pas de compte ?</p>
+        <a href="inscription_patient.html" style="text-decoration: none;">
+            <button type="button" class="btn-register"><i class="fa fa-user-plus"></i> S'inscrire</button>
+        </a>
     </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png" class="medical-img" alt="Médecine">
+
+    <div style="margin-top: 15px;">
+        <a href="index.html" style="color: #64748b; text-decoration: none; font-size: 14px;"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+    </div>
+</div>
 </body>
 
 </html>
