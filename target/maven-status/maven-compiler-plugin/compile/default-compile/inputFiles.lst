@@ -1,0 +1,12 @@
+C:\pfe-project\src\main\java\org\example\model\Administrateur.java
+C:\pfe-project\src\main\java\org\example\model\Medecin.java
+C:\pfe-project\src\main\java\org\example\model\Patient.java
+C:\pfe-project\src\main\java\org\example\model\RendezVous.java
+C:\pfe-project\src\main\java\org\example\model\SessionInscription.java
+C:\pfe-project\src\main\java\org\example\servlet\ConnexionServlet.java
+C:\pfe-project\src\main\java\org\example\servlet\InscriptionServlet.java
+C:\pfe-project\src\main\java\org\example\servlet\ProfilPatientServlet.java
+C:\pfe-project\src\main\java\org\example\servlet\RedirectionRoleServlet.java
+C:\pfe-project\src\main\java\org\example\servlet\SessionMedecinServlet.java
+C:\pfe-project\src\main\java\org\example\util\InitialisationDonnees.java
+C:\pfe-project\src\main\java\org\example\util\UtilitaireJPA.java
