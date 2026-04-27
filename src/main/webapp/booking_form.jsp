@@ -46,7 +46,7 @@
     <div class="booking-card">
         <h2 style="color: #0077b6; margin-bottom: 10px;">Inscription à une Session</h2>
         <p style="color: #475569; margin-bottom: 30px;">
-            Choisissez une session d'examen avec <strong>Dr. ${doctor.name}</strong>.
+            Choisissez une session d'examen avec <strong>${doctor.name}</strong>.
             <br><small><i class="fas fa-map-marker-alt"></i> ${doctor.location}</small>
         </p>
 

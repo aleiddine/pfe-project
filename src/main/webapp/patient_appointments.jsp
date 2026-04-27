@@ -38,7 +38,7 @@
         <c:forEach var="app" items="${appointments}">
             <div class="appointment-card animate-fade">
                 <div>
-                    <h3 style="margin: 0 0 10px 0;">Dr. ${app.doctor.name}</h3>
+                    <h3 style="margin: 0 0 10px 0;">${app.doctor.name}</h3>
                     <p style="margin: 0; color: #666;"><i class="fas fa-stethoscope"></i> ${app.doctor.specialty}</p>
                     <p style="margin: 5px 0 0 0; color: #666;"><i class="fas fa-map-marker-alt"></i> ${app.doctor.location}</p>
                 </div>

@@ -113,7 +113,7 @@
             <form action="rechercheMedecins" method="get" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr auto; gap: 15px; align-items: flex-end;">
                 <div class="input-group" style="margin: 0;">
                     <label style="display: block; margin-bottom: 8px; font-weight: 600;">Nom ou mot-clé</label>
-                    <input type="text" name="query" placeholder="Ex: Dr. Ahmed..." style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                    <input type="text" name="query" placeholder="Ex: Dr.Ahmed..." style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
                 </div>
                 <div class="input-group" style="margin: 0;">
                     <label style="display: block; margin-bottom: 8px; font-weight: 600;">Localisation</label>

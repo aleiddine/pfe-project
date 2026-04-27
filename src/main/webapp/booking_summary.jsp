@@ -50,7 +50,7 @@
         </div>
 
         <div class="info-box">
-            <p><strong><i class="fas fa-user-md"></i> Médecin :</strong> Dr. ${appointment.doctor.name}</p>
+            <p><strong><i class="fas fa-user-md"></i> Médecin :</strong> ${appointment.doctor.name}</p>
             <p><strong><i class="fas fa-stethoscope"></i> Spécialité :</strong> ${appointment.doctor.specialty}</p>
             <p><strong><i class="fas fa-clock"></i> Heure de passage prévue :</strong> ${appointment.appointmentTime}</p>
             <p><strong><i class="fas fa-map-marker-alt"></i> Lieu :</strong> ${appointment.doctor.location}</p>

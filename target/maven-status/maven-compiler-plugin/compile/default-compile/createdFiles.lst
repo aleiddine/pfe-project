@@ -1,12 +1,17 @@
 org\example\servlet\ProfilPatientServlet.class
 org\example\model\Medecin.class
 org\example\model\Patient.class
+org\example\servlet\RendezVousServlet.class
 org\example\util\UtilitaireJPA.class
+org\example\servlet\DashboardAdminServlet.class
 org\example\servlet\SessionMedecinServlet.class
 org\example\util\InitialisationDonnees.class
+org\example\servlet\VoirSessionsServlet.class
+org\example\servlet\RechercheMedecinServlet.class
 org\example\model\Administrateur.class
 org\example\model\RendezVous.class
 org\example\model\SessionInscription.class
+org\example\servlet\DeconnexionServlet.class
 org\example\servlet\RedirectionRoleServlet.class
 org\example\servlet\InscriptionServlet.class
 org\example\servlet\ConnexionServlet.class

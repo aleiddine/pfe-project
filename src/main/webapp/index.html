@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoCortisol - Select Your Role</title>
-    <meta name="description" content="Select your role to login into ClinicCare systems as Admin, Doctor, or Patient.">
+    <title>NoCortisol - Choisir votre rôle</title>
+    <meta name="description" content="Choisissez votre rôle pour accéder au système NoCortisol en tant qu'administrateur, médecin ou patient.">
     <link rel="stylesheet" href="selection.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="overlay-text">
-        <h1>Welcome to NoCortisol</h1>
-        <p>Please select your role to continue</p>
-    </div>
-    <div class="container">
-        <!-- Admin Card -->
-        <a href="roleSelect?role=admin" class="card" style="background-image: url('admin_bg.png');" id="card-admin">
-            <div class="card-content">
-                <h2>Admin</h2>
-                <p>Manage the system</p>
-            </div>
-        </a>
+<div class="overlay-text">
+    <h1>Bienvenue chez NoCortisol</h1>
+    <p>Veuillez sélectionner votre rôle pour continuer</p>
+</div>
+<div class="container">
+    <!-- Carte Admin -->
+    <a href="selectionRole?role=admin" class="card" style="background-image: url('admin_bg.png');" id="card-admin">
+        <div class="card-content">
+            <h2>Administrateur</h2>
+            <p>Gérer le système</p>
+        </div>
+    </a>
 
-        <!-- Doctor Card -->
-        <a href="roleSelect?role=doctor" class="card" style="background-image: url('dr.jpg');" id="card-doctor">
-            <div class="card-content">
-                <h2>Doctor</h2>
-                <p>Access your schedule</p>
-            </div>
-        </a>
+    <!-- Carte Médecin -->
+    <a href="selectionRole?role=doctor" class="card" style="background-image: url('dr.jpg');" id="card-doctor">
+        <div class="card-content">
+            <h2>Médecin</h2>
+            <p>Accéder à votre planning</p>
+        </div>
+    </a>
 
-        <!-- Patient Card -->
-        <a href="roleSelect?role=patient" class="card" style="background-image: url('patient.jpeg');" id="card-patient">
-            <div class="card-content">
-                <h2>Patient</h2>
-                <p>Book an appointment</p>
-            </div>
-        </a>
-    </div>
+    <!-- Carte Patient -->
+    <a href="selectionRole?role=patient" class="card" style="background-image: url('patient.jpeg');" id="card-patient">
+        <div class="card-content">
+            <h2>Patient</h2>
+            <p>Réserver un rendez-vous</p>
+        </div>
+    </a>
+</div>
 </body>
 </html>
